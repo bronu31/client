@@ -13,9 +13,6 @@ export class EmployeeService {
 
   getEmployeesList(): Observable<Employee[]>{
     return this.httpClient.get<Employee[]>(`${this.baseURL}employees`);
-
-
-
   }
 
 }
