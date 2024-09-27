@@ -19,11 +19,11 @@ const routes: Routes = [
     component: CompanyListComponent
   },
   {
-    path: '/products',
+    path: 'products',
     component: ProductListComponent
   },
   {
-    path: '/employees',
+    path: 'employees',
     component: EmployeeListComponent
   },
 ];

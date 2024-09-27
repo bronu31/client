@@ -1,1 +1,27 @@
-<p>product-list works!</p>
+
+<h2>Employee list</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Имя</th>
+    <th>Фамилия</th>
+    <th>Отчество</th>
+    <th>Дата рождения</th>
+    <th>Кнопка действия</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products">
+    <td>{{product.name}}</td>
+    <td>{{product.producer}}</td>
+    <td>{{product.rating}}</td>
+    <td>{{product.description}}</td>
+    <td>
+      <button>press</button>
+      <button>us</button>
+    </td>
+
+  </tr>
+  </tbody>
+
+</table>
