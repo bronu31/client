@@ -1,7 +1,7 @@
 
 <h2>Employee list</h2>
-<table class="table table-striped">
-  <thead>
+<table class="table table-striped not-white">
+  <thead class="not-white">
   <tr>
     <th>Имя</th>
     <th>Фамилия</th>
@@ -10,12 +10,12 @@
     <th>Кнопка действия</th>
   </tr>
   </thead>
-<tbody>
-<tr *ngFor="let employee of employees">
-  <td>{{employee.name}}</td>
-  <td>{{employee.surname}}</td>
-  <td>{{employee.lastName}}</td>
-  <td>{{employee.birthdate}}</td>
+<tbody class="not-white">
+<tr *ngFor="let employee of employees" class="not-white">
+  <td class="not-white">{{employee.name}}</td>
+  <td class="not-white">{{employee.surname}}</td>
+  <td class="not-white">{{employee.lastName}}</td>
+  <td class="not-white">{{employee.birthdate}}</td>
   <td>
     <button>press</button>
     <button>us</button>
