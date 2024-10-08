@@ -1,6 +1,6 @@
 
 <h2>Employee list</h2>
-<table class="table table-striped not-white">
+<table class="table table-striped">
   <thead>
   <tr>
     <th>Название продукта</th>
@@ -10,7 +10,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let product of products" class="not-white">
+  <tr *ngFor="let product of products">
     <td>{{product.name}}</td>
     <td>{{product.producer}}</td>
     <td>{{product.rating}}</td>
