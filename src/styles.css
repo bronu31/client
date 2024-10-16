@@ -2,7 +2,22 @@
 @import "~bootstrap/dist/css/bootstrap-grid.min.css";
 
 .test-header{
-  background-color: blue;
+  background-color: cornflowerblue;
+  width: 250px;
+  height: 250px;
+
+  margin: 10px;
+  flex: 1 0 21%;
+}
+
+.test-header-father{
+  display: flex;
+  flex-wrap: wrap;
+}
+.place-holder{
+  width: 250px;
+  height: 150px;
+  background-color: aquamarine;
 }
 .not-white{
   background-color: #355fa1;
