@@ -15,20 +15,15 @@ export class EmployeeListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getEmployees();
-    /*this.employees=[{
-      "id":1,
-      "name":"first",
-      "surname":"first",
-      "lastName":"first",
-      "birthdate": new Date()
-
-    }]*/
   }
 
   private getEmployees(){
     this.employeeService.getEmployeesList().subscribe(data =>{
       this.employees=data;
     })
+  }
+   convertToRuDate(date?:Date){
+    return this.employeeService.birtdateToRuDate(date);
   }
 
 }
