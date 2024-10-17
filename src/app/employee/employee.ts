@@ -1,8 +1,8 @@
-export class Employee {
-  id: number | undefined;
-  name: String | undefined;
-  surname: String | undefined;
-  lastName: String | undefined;
-  birthdate: Date | undefined;
+export interface Employee {
+  id: number;
+  name: String ;
+  surname: String;
+  lastName: String;
+  birthdate: Date;
 
 }
