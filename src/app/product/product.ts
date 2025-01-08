@@ -1,10 +1,10 @@
 import {Company} from "../company/company";
 
-export class Product {
+export interface Product {
 
-  id: number|undefined;
-  name: String|undefined;
-  producer: Company|undefined;
-  rating: number|undefined;
-  description: String|undefined;
+  id: number;
+  name: String;
+  producer: Company;
+  rating: number;
+  description: String;
 }

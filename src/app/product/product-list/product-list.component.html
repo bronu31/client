@@ -1,26 +1,21 @@
 
 <h2>Employee list</h2>
-<table class="table table-striped not-white">
-  <thead>
-  <tr>
-    <th>Название продукта</th>
-    <th>Производитель</th>
-    <th>Рейтинг</th>
-    <th>Описание</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let product of products" class="not-white">
-    <td>{{product.name}}</td>
-    <td>{{product.producer}}</td>
-    <td>{{product.rating}}</td>
-    <td>{{product.description}}</td>
-    <td>
-      <button>press</button>
-      <button>us</button>
-    </td>
 
-  </tr>
-  </tbody>
 
-</table>
+<h2>Product list</h2>
+
+<div class="test-header-father">
+  <div *ngFor="let product of products">
+
+    <div class="test-header">
+
+      <div class="place-holder">Тут возможно будет фото, так что плейс холдер хихи</div>
+
+      <div>{{product.name}}</div>
+      <div>{{product.producer}}</div>
+      <div>{{product.rating}}</div>
+      <div> {{product.description}}</div>
+
+    </div>
+  </div>
+</div>

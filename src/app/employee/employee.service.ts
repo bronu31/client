@@ -3,18 +3,16 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Employee} from "./employee";
 import {HelperClass} from "../utils/HelperClass";
+import {AbstractBasicFunctionsForService} from "../BasicFunctionalityForClasses/abstract-basic-functions-for-service";
 
 @Injectable({
   providedIn: 'root'
 })
-export class EmployeeService{
+export class EmployeeService extends AbstractBasicFunctionsForService<Employee> {
 
-  private baseURL="http://localhost:8080/api/";
-  constructor(private httpClient: HttpClient) {}
-
-  getEmployeesList(): Observable<Employee[]>{
-    return this.httpClient.get<Employee[]>(`${this.baseURL}employees`);
-    //return this.httpClient.get<Employee[]>(`employees`);
+  constructor(override httpClient: HttpClient) {
+    super(httpClient);
+    this.baseURL += "employees"
   }
   birtdateToRuDate(birtdate?:Date): string{
     return HelperClass.convertToRuDate(birtdate);
