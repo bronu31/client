@@ -6,9 +6,9 @@ export abstract class AbstractBasicFunctions <T>{
   entity: T[] | undefined;
 
 
-  constructor(private service : AbstractBasicFunctionsForService<T>) {}
+  protected constructor(private service : AbstractBasicFunctionsForService<T>) {}
 
-      private getEntity(){
+       getEntity(){
         this.service.getEntityList().subscribe(data=>
           this.entity=data);
       }
