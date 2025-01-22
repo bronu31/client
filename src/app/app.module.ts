@@ -10,6 +10,8 @@ import {ProductListComponent} from "./product/product-list/product-list.componen
 import {HeaderButtonsComponent} from "./utils/header-buttons/header-buttons.component";
 import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
 import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
+import {LoginPageComponent} from "./session components/login-page/login-page.component";
+import {RegisterPageComponent} from "./session components/register-page/register-page.component";
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
     EmployeeListComponent,
     CompanyListComponent,
     ProductListComponent,
-    HeaderButtonsComponent
+    HeaderButtonsComponent,
+    LoginPageComponent,
+    RegisterPageComponent
   ],
   imports: [
     BrowserModule,
