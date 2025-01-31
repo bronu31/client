@@ -12,4 +12,12 @@ export class ClientServiceService extends AbstractBasicFunctionsForService<Clien
     super(httpClient);
     this.baseURL += "users";
   }
+
+  registerUser(client:Client){
+    this.httpClient.post(`${this.baseURL}`,client);
+  }
+  loginUser(client:Client){
+    this.httpClient.get(`${this.baseURL}`);
+  }
+
 }

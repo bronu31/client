@@ -17,7 +17,7 @@ export class ProductListComponent extends AbstractBasicFunctions<Product> implem
 
 
   ngOnInit(): void {
-    this.getEntity();
+    this.getEntityAll();
   }
 
 }

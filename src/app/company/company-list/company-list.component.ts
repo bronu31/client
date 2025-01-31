@@ -10,7 +10,7 @@ import {CompanyService} from "../company.service";
 })
 export class CompanyListComponent extends AbstractBasicFunctions<Company> implements OnInit {
   ngOnInit(): void {
-    this.getEntity();
+    this.getEntityAll();
   }
 
   constructor(private companyService: CompanyService) {

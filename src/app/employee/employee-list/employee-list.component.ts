@@ -16,7 +16,7 @@ export class EmployeeListComponent extends AbstractBasicFunctions<Employee> impl
   }
 
   ngOnInit(): void {
-    this.getEntity();
+    this.getEntityAll();
   }
 
   convertToRuDate(date?: Date) {

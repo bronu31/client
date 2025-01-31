@@ -8,8 +8,12 @@ export abstract class AbstractBasicFunctions <T>{
 
   protected constructor(private service : AbstractBasicFunctionsForService<T>) {}
 
-       getEntity(){
+  getEntityAll(){
         this.service.getEntityList().subscribe(data=>
           this.entity=data);
       }
+  /*getEntityOne(id:number){
+    this.service.getEntityById(id).subscribe(data=>
+      this.entity=data);
+  }*/
 }
